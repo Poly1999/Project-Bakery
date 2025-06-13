@@ -1,0 +1,85 @@
+.footer {
+  padding: 32px 0;
+  position: relative;
+  background-image: url('../images lessons/footer-background.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &::before,
+  &::after {
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+  }
+
+  &::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url('../images-lessons/small-bread-footer.png');
+    content: '';
+  }
+
+  &::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url('../images-lessons/big-bread-footer.png');
+    content: '';
+  }
+
+  &__logo,
+  &__menu {
+    flex-grow: 1;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+  }
+
+  &__nav,
+  &__adress {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      flex-basis: 50%;
+      text-align: left;
+    }
+  }
+
+  &__adress-list,
+  &__adress-info {
+    flex-grow: 1;
+  }
+
+  &__adress-link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__adress-icon {
+    fill: var(--color-primary-light);
+  }
+
+  &__adress-link:hover {
+    color: var(--color-brand-light);
+  }
+
+  &__adress-copyright {
+    font-size: 14px;
+  }
+}
