@@ -78,7 +78,7 @@
         <div class="container">
           <div class="traditions-section__container">
             <div class="traditions-section__content">
-              <h2 class="traditions-section__title section-title">
+              <h2 class="traditions-section__title section__title">
                 Новий формат традиції
               </h2>
               <p>
@@ -100,10 +100,10 @@
             <img
               class="traditions-section__image"
               srcset="
-                ./images-lessons/new-traditions-format.jpg    1x,
-                ./images-lessons/new-traditions-format@2x.jpg 2x
+                ./images-lessons/Новий-формат-традицій.jpg    1x,
+                ./images-lessons/Новий-формат-традицій@2x.jpg 2x
               "
-              src="./images-lessons/new-traditions-format.jpg"
+              src="./images-lessons/Новий-формат-традицій.jpg"
               alt="Чоловік пекар дивиться на батони із посмішкою"
             />
           </div>
@@ -319,62 +319,63 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <div class="contact-section__box">
+                <form name="contact-form" autocomplete="off">
+                  <div class="contact-section__form-field input">
+                    <label class="input__label hidden" for="user-name"
+                      >Ім’я
+                    </label>
+                    <input
+                      class="input__control"
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="Ім’я"
+                      minlength="2"
+                      required
+                    />
+                  </div>
 
-              <form name="contact-form" autocomplete="off">
-                <div class="contact-section__form-field input">
-                  <label class="input__label hidden" for="user-name"
-                    >Ім’я
-                  </label>
-                  <input
-                    class="input__control"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                    placeholder="Ім’я"
-                    minlength="2"
-                    required
-                  />
-                </div>
+                  <div class="contact-section__form-field input">
+                    <label class="input__label hidden" for="user-name"
+                      >Телефон</label
+                    >
+                    <input
+                      class="input__control"
+                      type="tel"
+                      id="user-tel"
+                      name="user-tel"
+                      placeholder="Телефон"
+                      pattern="^\+380\d{9}$"
+                      required
+                    />
+                  </div>
 
-                <div class="contact-section__form-field input">
-                  <label class="input__label hidden" for="user-name"
-                    >Телефон</label
-                  >
-                  <input
-                    class="input__control"
-                    type="tel"
-                    id="user-tel"
-                    name="user-tel"
-                    placeholder="Телефон"
-                    pattern="^\+380\d{9}$"
-                    required
-                  />
-                </div>
+                  <div class="contact-section__form-field input">
+                    <label class="input__label hidden" for="user-name"
+                      >Електронна пошта</label
+                    >
+                    <input
+                      class="input__control"
+                      type="email"
+                      id="user-email"
+                      name="user-email"
+                      placeholder="Електронна пошта"
+                      required
+                    />
+                  </div>
 
-                <div class="contact-section__form-field input">
-                  <label class="input__label hidden" for="user-name"
-                    >Електронна пошта</label
-                  >
-                  <input
-                    class="input__control"
-                    type="email"
-                    id="user-email"
-                    name="user-email"
-                    placeholder="Електронна пошта"
-                    required
-                  />
-                </div>
-
-                <button class="contact-section__button button" type="submit">
-                  Замовити дзвінок
-                </button>
-                <p class="form-terms">
-                  Натискаючи на кнопку я погоджуюсь з
-                  <a class="form-terms__link" href="#"
-                    >політикою конфіденційності</a
-                  >
-                </p>
-              </form>
+                  <button class="contact-section__button button" type="submit">
+                    Замовити дзвінок
+                  </button>
+                  <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь з
+                    <a class="form-terms__link" href="#"
+                      >політикою конфіденційності</a
+                    >
+                  </p>
+                </form>
+              </div>
             </div>
             <iframe
               class="contact-section__map"
